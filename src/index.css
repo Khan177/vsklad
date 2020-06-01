@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+*{
+	margin:0;
+	scroll-behavior: smooth;
+}
+.orange{
+	color:#F15713;
+}
+.main{
+	padding: 0 10%;
+	background: linear-gradient(74.41deg, #1C2149 7.45%, #272E72 117.36%);
+	height:90vh;
+}
+.main .header{
+	padding:4% 0;
+	display:flex;
+	flex-direction: row-reverse;
+}
+.main .header .navigation{
+	width:60%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.main .header .navigation a{
+	font-family:"Lato", sans-serif;
+	text-decoration: none;
+	color:#99A6D3;
+	font-size:0.9em;
+}
+.main .main-content{
+	display:flex;
+	flex-direction: row;
+}
+.main .main-content .main-left{
+	width:60%;
+}
+.main .main-content .main-content-header{
+	display:flex;
+	justify-content: space-between;
+}
+.main .main-content .main-content-header-nav{
+	width:60%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main .main-content .main-content-header-nav a{
+	font-family:"Lato", sans-serif;
+	text-decoration: none;
+	color:#99A6D3;
+	font-size:0.9em;
+}
+.main .main-content .main-content-header-nav a:hover{
+	cursor: pointer;
+}
+.main .main-content .main-content-header-nav .active{
+	color:#FFFFFF;
+	position: relative;
+	padding-bottom:2%;
+}
+.main .main-content .main-content-header-nav .active:before {
+  content : "";
+  position: absolute;
+  left    : 50%;
+  bottom  : 0;
+  height  : 2px;
+  width   : 33%;
+  transform: translateX(-50%);
+  border-bottom:2px solid #F15713;
+}
+.main .main-content .main-content-text{
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	padding-top:10%;
+	font-family:"Montserrat Alternates", sans-serif;
+}
+.main .main-content .main-content-text h1,h3{
+	color:#FFFFFF;
+	padding:2% 0;
+}
+.main .main-content .main-content-text h4{
+	color:#99A6D3;
+}
+.main .main-content .main-content-text .buttons{
+	padding-top: 6%;
+}
+.main .main-content .main-content-text .buttons button{
+	box-shadow: 2px 8px 4px rgba(15, 18, 43, 0.25);
+	color:white;
+	border:none;
+	width:35%;
+	padding:5px 0;
+	border-radius: 6px;
+	font-family:"Lato", sans-serif;
+	margin-right:10px;
+}
+.main .main-content .main-content-text .buttons button:hover{
+	cursor:pointer;
+}
+.main .main-content .main-content-text .buttons .first{
+	background-color: #F15713;
+}
+.main .main-content .main-content-text .buttons .second{
+	background-color: #262E72;
+}
+.main .main-content .main-right{
+	width:40%;
+	display: flex;
+	justify-content: center;
+}
+.main .main-content .main-right img{
+	width:80%;
+}
+.empty{
+	height:20vh;
+}
+.empty .down{
+	display: flex;
+	justify-content: center;
+}
+.empty .down img{
+	transform: translateY(-50%);
+} 
+.empty .down img:hover{
+	cursor: pointer;
+}
+.clients{
+	padding: 3% 10%;
+	background:linear-gradient(180deg, #F7F7F7 0%, rgba(255, 255, 255, 0) 100%);
+	font-family: "Montserrat", sans-serif;
+	font-weight:normal!important;
+}
+.clients h4{
+	color: #F15713;;
+}
+.clients h2{
+	padding:3% 0;
+}
+.clients .reviews{
+	display: flex;
+	justify-content: space-between;
+	text-align:center;
+	padding: 3% 0;
+}
+.clients .reviews .review{
+	background-color: #FFFFFF;
+	padding:2%;
+	width:43%;
+	box-shadow: 0px 0px 20px rgba(32, 31, 78, 0.08);
+	border-radius: 4px;
+}
+.clients .reviews .review h6{
+	color: #7F8FA4;
+	margin-bottom:20px;
+	margin-top:10px;
+}
+.clients .reviews .review p{
+	font-size: 0.9em;
+}
+.clients .partners{
+	display:flex;
+	justify-content: space-between;
+	padding: 5% 0 3% 0; 
+}
+.menu-button{
+}
+.menu{
+	visibility: hidden;
+	right:0;
+	background-color: #FFFFFF;
+	padding: 5px 0;
+	border-radius: 10px;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+  	transition: opacity 0.3s;
+  	display:flex;
+  	padding:2%;
+  	color:#000000;
+  	font-size:1.5em;
+  	font-family: "Lato",sans-serif;
+}
+.menu-left{
+	border-right: 1px solid #E1E8EE;
+	padding-right:2%;
+}
+.menu-right{
+	padding-left: 2%;
+}
+.services, .apps{
+	margin-top:15px;
+}
+.description{
+	color: #7F8FA4;
+}
+.menu a{
+	color:black!important;
+}
+.menu-button:hover .menu{
+	visibility: visible;
+	opacity:1;
+	display: flex;
+}
