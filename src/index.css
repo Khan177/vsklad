@@ -4,6 +4,9 @@
 	margin:0;
 	scroll-behavior: smooth;
 }
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
 .orange{
 	color:#F15713;
 }
@@ -81,6 +84,7 @@
 .main .main-content .main-content-text h1,h3{
 	color:#FFFFFF;
 	padding:2% 0;
+	font-weight: normal;
 }
 .main .main-content .main-content-text h4{
 	color:#99A6D3;
@@ -179,10 +183,13 @@
 	opacity: 0;
   	transition: opacity 0.3s;
   	display:flex;
-  	padding:2%;
-  	color:#000000;
+  	padding:4%;
+  	color: #334150;
   	font-size:1.5em;
   	font-family: "Lato",sans-serif;
+}
+.menu h5,.menu h6{
+	font-weight: normal;
 }
 .menu-left{
 	border-right: 1px solid #E1E8EE;
@@ -196,9 +203,10 @@
 }
 .description{
 	color: #7F8FA4;
+	font-size:0.5em;
 }
 .menu a{
-	color:black!important;
+	color: #334150!important;
 }
 .menu-button:hover .menu{
 	visibility: visible;
